@@ -58,8 +58,6 @@ class BadLink(commands.Cog):
                         if (query.badlink_method == 4): #BAN
                             await member.ban(reason = "Phishing link")
 
-# channel = self.bot.get_channel(911717306860732456)
-# await channel.send(f"Phishing link detected! User {message.author.mention} Removed BOMBEL role for illegal link! | <@&554705684789198848>")
 
 def setup(bot):
     bot.add_cog(BadLink(bot))
